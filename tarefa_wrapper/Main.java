@@ -1,4 +1,3 @@
-package br.com.gpaiva;
 
 import java.util.Scanner;
 
