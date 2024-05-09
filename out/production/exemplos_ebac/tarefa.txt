@@ -1,0 +1,13 @@
+Acordar
+Abrir os olhos
+Verificar a hora:
+Se a hora for maior que 7h:
+Respirar fundo 3 vezes
+Sentar na cama por alguns minutos
+Levantar da cama
+Desligar o ventilador
+Abrir a porta
+Sair do quarto
+Se a hora for menor que 7h:
+fechar os olhos
+tentar voltar a dormir
