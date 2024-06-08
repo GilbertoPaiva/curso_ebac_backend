@@ -2,11 +2,11 @@ package br.com.gpaiva.domain;
 
 import javax.persistence.*;
 @Entity
-@Table(name = "TB_LIVROS")
-public class Livro {
+@Table(name = "TB_PRODUTO")
+public class Produto {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "livro_seq")
-    @SequenceGenerator(name = "livro_seq", sequenceName = "sq_livro", initialValue = 1, allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "produto_seq")
+    @SequenceGenerator(name = "produto_seq", sequenceName = "sq_produto", initialValue = 1, allocationSize = 1)
     private Long id;
 
     @Column(name = "CODIGO", length = 10, nullable = false, unique = true)
@@ -18,8 +18,8 @@ public class Livro {
     @Column(name = "DESCRICAO", length = 100, nullable = false, unique = true)
     private String descricao;
 
-    @Column(name = "AUTOR", length = 20, nullable = false)
-    private String autor;
+    @Column(name = "PRECO", length = 20, nullable = false)
+    private Long preco;
 
     public Long getId() {
         return id;
@@ -53,11 +53,11 @@ public class Livro {
         this.descricao = descricao;
     }
 
-    public String getAutor() {
-        return autor;
+    public Long getPreco() {
+        return preco;
     }
 
-    public void setAutor(String autor) {
-        this.autor = autor;
+    public void setPreco(Long preco) {
+        this.preco = preco;
     }
 }
